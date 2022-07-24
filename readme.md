@@ -24,6 +24,7 @@ Here are my extensions that I think are helpful
 * `Remote - Containers` Lets you develop INSIDE a container which is super helpful.
 * `Remote SSH` Same
 * `Remote Development` Same.
+* `markddownlint` helpful for making better looking markdown. Sometimes it can be  pain, but most of the time it is good. 
 * CSV color highlighter??
 * `google-search` maybe. still experimenting with this one.
 
@@ -38,3 +39,45 @@ I can never remember them all, but here are some that are helpful.
 * `ctrl` + `1` or (`2` , ...) to go to the split window text editor (or open it)
 
 This video has a lot of great hits. <https://www.youtube.com/watch?v=ifTF3ags0XI>
+
+## python setup
+
+Everything related to setting up python
+
+### Isolation
+
+* Always use a seperate python enviroment. 
+* I liked using `conda`  for a long time, but in general seems like `pip` is easier to use. However, you can't specify a python version with `pip`, so now I make a `conda` enviroment and then install everything with `pip`.
+* In this example, you would want to give something other than `MYNAME` and also specify which version of `python` that you actually want to use.
+
+```bash
+conda create --name MYNAME python=3.10
+conda activate MYNAME
+pip install mycoolpackagees
+pip list --format=freeze > requirements.txt
+# make the enviroment
+pip install -r requirements.txt
+```
+
+### Jupyter
+
+Sometimes kernels are not added automatically. Assuming you have a `conda` setup, then try this.  
+
+```bash
+conda activate mytestenv
+pip install ipykernel
+python -m ipykernel install --user --name=mytestenv
+```
+
+### Python try-except
+
+The default debug messages in python are OK. But using traceback can help a lot for finding problems.
+
+```python
+import traceback
+try:
+  raise Exception("my error")
+except Exception as e:
+  print(e)
+  print(traceback.format_exc())
+```
