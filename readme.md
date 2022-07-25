@@ -81,3 +81,7 @@ except Exception as e:
   print(e)
   print(traceback.format_exc())
 ```
+
+## My Gists
+* These have some helpful hints and are the precursor to this readme.
+* https://gist.github.com/garland3
