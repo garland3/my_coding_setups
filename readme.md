@@ -59,6 +59,7 @@ pip list --format=freeze > requirements.txt
 # conda env export --no-builds > my_env.yml
 # make the enviroment
 pip install -r requirements.txt
+# conda env create -n MYNAME -f my_env.yml
 ```
 
 ### Jupyter
