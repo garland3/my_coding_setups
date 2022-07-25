@@ -12,7 +12,7 @@ I like to use VScode.
 
 Here are my extensions that I think are helpful
 
-* `Git Project Manager`. lets you click on a few things rather than remembering all the `git commands`.
+~~* `Git Project Manager`. lets you click on a few things rather than remembering all the `git commands`.~~
 * `Docker`  for docker syntax highlighting
 * `Python` from microsoft
 * `Pylance` language server for python. If it is having a hard time finding a package, you might need to add the path explicitly.
@@ -27,6 +27,7 @@ Here are my extensions that I think are helpful
 * `markddownlint` helpful for making better looking markdown. Sometimes it can be  pain, but most of the time it is good. 
 * CSV color highlighter??
 * `google-search` maybe. still experimenting with this one.
+* `diff` a simple tool for diffing 2 files. 
 
 ### VScode short cuts
 
