@@ -56,6 +56,7 @@ conda create --name MYNAME python=3.10
 conda activate MYNAME
 pip install mycoolpackagees
 pip list --format=freeze > requirements.txt
+# conda env export --no-builds > my_env.yml
 # make the enviroment
 pip install -r requirements.txt
 ```
