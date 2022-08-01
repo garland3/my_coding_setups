@@ -88,3 +88,18 @@ except Exception as e:
 ## My Gists
 * These have some helpful hints and are the precursor to this readme.
 * https://gist.github.com/garland3
+
+## Working Dir setup
+When I stsart a project this setup seems to work for me pretty well
+```
+* base
+  - readme.md
+  - setup.py
+  - project_name
+      - python code and stuff. 
+  - tests
+     - test_file_name_in_project.py
+  - scratch
+     - example how to to use the code
+     - random scripts to play with stuff. 
+```
