@@ -92,7 +92,7 @@ except Exception as e:
 ## Working Dir setup
 When I stsart a project this setup seems to work for me pretty well
 ```
-* base
+- base
   - readme.md
   - setup.py
   - project_name
