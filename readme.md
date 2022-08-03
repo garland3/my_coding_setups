@@ -39,7 +39,9 @@ I can never remember them all, but here are some that are helpful.
 * `ctrl` + `backtick` to go the terminal
 * `ctrl` + `1` or (`2` , ...) to go to the split window text editor (or open it)
 
-This video has a lot of great hits. <https://www.youtube.com/watch?v=ifTF3ags0XI>
+This video has a lot of great hits. <https://www.youtube.com/watch?v=ifTF3ags0XI>    
+Also here are some great tips. https://code.visualstudio.com/docs/getstarted/tips-and-tricks
+
 
 ## python setup
 
