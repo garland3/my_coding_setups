@@ -105,3 +105,9 @@ When I stsart a project this setup seems to work for me pretty well
      - example how to to use the code
      - random scripts to play with stuff. 
 ```
+
+## Git
+ * I always forget how to undo the last commit. Here is the command. 
+ ```
+ git reset HEAD~    
+ ```
