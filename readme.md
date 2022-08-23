@@ -116,3 +116,14 @@ nvidia-smi
  ```
  git reset HEAD~    
  ```
+## Enviroments
+### Linux
+* See the enviroment (Ubuntu)
+```bash
+printenv
+printenv | grep txtImLookingfor
+```
+* set var
+```
+set MYVAR=MYVALUE
+```
