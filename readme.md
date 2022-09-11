@@ -135,3 +135,17 @@ printenv | grep txtImLookingfor
 ```
 set MYVAR=MYVALUE
 ```
+ 
+ ### Julia
+ * More documentation on Julia env's can be found here. https://pkgdocs.julialang.org/v1/environments/
+ * go to a folder, start julia, go to the package manager `]`, then call 
+ ```
+ activate .
+ readdir()
+ ```
+ * To use an existing project folder, you also call `activate .`
+ * To start julia in the env then calle
+ ```
+ julia --project=.
+ ```
+ which will start julia in the `.` folder (current folder)
