@@ -2,6 +2,13 @@ from pathlib import Path
 import argparse
 import yaml
 from yaml.loader import SafeLoader 
+import sys
+
+def is_notebook2():
+    for arg in sys.argv:
+        if arg.find("Session.key=")>-1:
+            return True
+    return False
 
 def get_args_parser():
     parser = argparse.ArgumentParser("JEDE")
@@ -31,7 +38,11 @@ def get_args_parser():
                         default="cuda",
                         type=str,
                         help="'cuda' or 'cpu'")
-    return parser.parse_args()
+    if is_notebook2():        
+        print("Is jupyter or ipython")
+        return parser.parse_args("")
+    else:
+        return parser.parse_args()
 
 def read_yamal(file):
     p = Path(file)
