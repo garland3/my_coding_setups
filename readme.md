@@ -149,3 +149,11 @@ set MYVAR=MYVALUE
  julia --project=.
  ```
  which will start julia in the `.` folder (current folder)
+ 
+ ## Linux Screen
+ You can use the screen tool to keep your process running after you close your ssh session (at least that is my most common use case). Here are the short cuts you need. 
+ * `screen` to start a new screen terminal
+ * `screen -ls` to list screens
+ * `screen -r XXXX` to attach (go into) a particular screen session
+ * `exit` in the terminal to stop/end a screen session
+<!--  * `ctrl` + `a` then `"` to list all existing screens -->
