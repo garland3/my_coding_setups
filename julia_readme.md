@@ -16,3 +16,14 @@
  julia --project=.
  ```
  which will start julia in the `.` folder (current folder)
+
+
+## Workflow
+
+There are various workflows which might work, but this one that I found helpful. 
+
+* Edit your code in the an IDE (like VScode with the julia extension)
+* Run the julia REPL (sort of like a shell)
+* Everytime you want to run your code again do `include('myfile.jl')` to run it. 
+* This prevents restarting your julia instance which often times requires re-compiling a lot of code. 
+* The slowest part of julia is at startup when things are loaded and precompiled. So want to avoid this. 
