@@ -27,3 +27,7 @@ There are various workflows which might work, but this one that I found helpful.
 * Everytime you want to run your code again do `include('myfile.jl')` to run it. 
 * This prevents restarting your julia instance which often times requires re-compiling a lot of code. 
 * The slowest part of julia is at startup when things are loaded and precompiled. So want to avoid this. 
+
+
+## Helpful hints
+* read the current dir (like `ls`) with  `readdir()` 
