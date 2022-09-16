@@ -31,3 +31,11 @@ There are various workflows which might work, but this one that I found helpful.
 
 ## Helpful hints
 * read the current dir (like `ls`) with  `readdir()` 
+* the multiple dispatch can make it tricky to try to figure what what piece of code is actually going to be run. One alternatie is to just run the code with the debugger and step through it function by function. 
+  * First, add the debugger `using Debugger`
+  * Debug your function with `@enter my_func(my_args)`
+  * next line is `n`
+  * step into is `s`
+  * step out is `so`
+  * More information can be found here. https://github.com/JuliaDebug/Debugger.jl
+
