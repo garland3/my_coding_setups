@@ -118,6 +118,11 @@ Also here are some great tips. <https://code.visualstudio.com/docs/getstarted/ti
  ```
  git reset HEAD~    
  ```
+ 
+ * I alwyas forget how to make a local repo, and sync for the 1st time to a remote repo. 
+ ```
+ git pull origin main  -f --allow-unrelated-histories
+ ```
 
 ## Enviroments
 
