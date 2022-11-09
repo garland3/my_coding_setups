@@ -24,6 +24,7 @@ pip list --format=freeze > requirements.txt
 # make the enviroment
 pip install -r requirements.txt
 # conda env create -n MYNAME -f my_env.yml
+# conda env update --file my_env.yml --prune
 ```
 
 ### Jupyter
