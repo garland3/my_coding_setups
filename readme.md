@@ -113,12 +113,22 @@ This video has a lot of great hits. <https://www.youtube.com/watch?v=ifTF3ags0XI
 Also here are some great tips. <https://code.visualstudio.com/docs/getstarted/tips-and-tricks>
 
 ## Git
+Fix untracked files
+ 
+ ```bash
+git rm -r --cached .    
+git add .    
+git commit -m "fixed untracked files"    
+
+ ```
 
 * I always forget how to undo the last commit. Here is the command.
 
  ```
  git reset HEAD~    
  ```
+ 
+ 
  
  * I alwyas forget how to make a local repo, and sync for the 1st time to a remote repo. 
  ```
