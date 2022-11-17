@@ -13,6 +13,15 @@ Everything related to setting up python
 
 * Always use a seperate python enviroment.
 * I liked using `conda`  for a long time, but in general seems like `pip` is easier to use. However, you can't specify a python version with `pip`, so now I make a `conda` enviroment and then install everything with `pip`.
+
+```bash
+# https://docs.conda.io/en/latest/miniconda.html
+wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.12.0-Linux-x86_64.sh
+chmod 711 Miniconda3-py39_4.12.0-Linux-x86_64.sh
+sh Miniconda3-py39_4.12.0-Linux-x86_64.sh
+```
+
+
 * In this example, you would want to give something other than `MYNAME` and also specify which version of `python` that you actually want to use.
 
 ```bash
@@ -38,6 +47,13 @@ conda activate mytestenv
 pip install ipykernel
 python -m ipykernel install --user --name=mytestenv
 ```
+
+### Specific python package index
+```bash
+pip install XXX -i  https://pypi.org/simple
+```
+
+
 
 ### Python try-except
 
