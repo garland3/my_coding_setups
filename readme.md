@@ -178,3 +178,18 @@ set MYVAR=MYVALUE
  * `screen -r XXXX` to attach (go into) a particular screen session
  * `exit` in the terminal to stop/end a screen session
 <!--  * `ctrl` + `a` then `"` to list all existing screens -->
+
+
+### cuda on ubuntu 22.04
+1. activate the additional drivers and install nvidia-XXX-515 (the newest 520 didnt' work for me)
+2. download the cuda-11.7 runfile (don't try the network version). Install only cuda (skip the driver)
+3. add cuda to the path
+```bash
+export PATH="/usr/local/cuda-11.7/bin:$PATH"
+export LD_LIBRARY_PATH="usr/local/cuda-11.7/lib64:$LD_LIBRARY_PATH"
+```
+4. download and install Miniconda (see download at the top)
+5. make new `env` and then install torch into the `env`. `conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia`
+6. install other things `sudo apt-get install openssh-server`
+7. remote into the machine and try some training https://github.com/pytorch/examples/blob/main/mnist/main.py
+8. be happy
