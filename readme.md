@@ -179,6 +179,10 @@ set MYVAR=MYVALUE
  * `exit` in the terminal to stop/end a screen session
 <!--  * `ctrl` + `a` then `"` to list all existing screens -->
 
+## Linux `top`
+`top` command can be super helpful for understanding if you are actually using your computer to the max or why things are running slow. This link walks you through using it. 
+https://www.howtogeek.com/668986/how-to-use-the-linux-top-command-and-understand-its-output/
+
 
 ### cuda on ubuntu 22.04
 1. activate the additional drivers and install nvidia-XXX-515 (the newest 520 didnt' work for me)
