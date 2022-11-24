@@ -11,5 +11,6 @@ Starting a ML from scratch is a bad idea. Lots of great code exists. Here are so
 * Fine tunning YoLo7. this is a good start. https://learnopencv.com/fine-tuning-yolov7-on-custom-dataset/
 
 ## labeling tools. 
-* this is helpful. a little web app. https://github.com/heartexlabs/labelImg
+* this list of tools is helpful https://github.com/heartexlabs/awesome-data-labeling
+* I've used this one (which is ont the list) https://github.com/heartexlabs/labelImg
 * 
