@@ -8,3 +8,8 @@ Starting a ML from scratch is a bad idea. Lots of great code exists. Here are so
 * segmentation. https://github.com/qubvel/segmentation_models.pytorch
 * 3D modeling and tasks in ML. https://pytorch3d.org/
 * Augmentations for images. https://albumentations.ai
+* Fine tunning YoLo7. this is a good start. https://learnopencv.com/fine-tuning-yolov7-on-custom-dataset/
+
+## labeling tools. 
+* this is helpful. a little web app. https://github.com/heartexlabs/labelImg
+* 
