@@ -70,20 +70,10 @@ except Exception as e:
 
 ## Working Dir setup
 
-When I start a project this setup seems to work for me pretty well
-
-```
-- base
-  - readme.md
-  - setup.py
-  - project_name
-      - python code and stuff. 
-  - tests
-     - test_file_name_in_project.py
-  - scratch
-     - example how to to use the code
-     - random scripts to play with stuff. 
-```
+### Config
+Dynaconfig seems to work well. https://www.dynaconf.com/
+### Folder setup
+Pyscaffold works well. https://pyscaffold.org/en/stable/
 
 ## Cuda version
 
