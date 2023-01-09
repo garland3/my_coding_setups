@@ -120,6 +120,12 @@ I can never remember them all, but here are some that are helpful.
 This video has a lot of great hits. <https://www.youtube.com/watch?v=ifTF3ags0XI>
 Also here are some great tips. <https://code.visualstudio.com/docs/getstarted/tips-and-tricks>
 
+## Docker
+ON windows sometimes docker causes problems. If I stop docker and memory usage is super high still, then stop the wsl
+```ps
+wsl --shutdown
+```
+
 ## Git
 Fix untracked files
  
