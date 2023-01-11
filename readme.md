@@ -148,6 +148,11 @@ git commit -m "fixed untracked files"
  ```
  git pull origin main  -f --allow-unrelated-histories
  ```
+ 
+ When merging and you want to keep `theirs` or `ours`
+ ```bash
+ git merge -X theirs otherbranch
+ ```
 
 ## Enviroments
 
