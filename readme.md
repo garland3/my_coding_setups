@@ -111,6 +111,8 @@ Here are my extensions that I think are helpful
 
 I can never remember them all, but here are some that are helpful.
 
+* `ctrl` + `B`, close the side panel
+* `ctrl` + `shift` + `B`, open the explore panel
 * `ctrl` + `g`, then type a line number to jump to that line.
 * `ctrl` + `p` then type the name of a file, to go that file.
 * `ctrl` +  `shift`  + `p` to open the command center
