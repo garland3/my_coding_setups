@@ -15,4 +15,4 @@ Starting a ML from scratch is a bad idea. Lots of great code exists. Here are so
 * I've used this one (which is ont the list) https://github.com/heartexlabs/labelImg
 * 
 ## wrapper for common ML tasks. 
-* https://github.com/microsoft/FLAML
+* FLAML helps with hyper parameters and other common tasks, so I can do more thinking, less boiler plate. https://github.com/microsoft/FLAML
