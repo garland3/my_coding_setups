@@ -14,3 +14,5 @@ Starting a ML from scratch is a bad idea. Lots of great code exists. Here are so
 * this list of tools is helpful https://github.com/heartexlabs/awesome-data-labeling
 * I've used this one (which is ont the list) https://github.com/heartexlabs/labelImg
 * 
+## wrapper for common ML tasks. 
+* https://github.com/microsoft/FLAML
