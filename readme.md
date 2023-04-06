@@ -201,3 +201,9 @@ export LD_LIBRARY_PATH="usr/local/cuda-11.7/lib64:$LD_LIBRARY_PATH"
 6. install other things `sudo apt-get install openssh-server`
 7. remote into the machine and try some training https://github.com/pytorch/examples/blob/main/mnist/main.py
 8. be happy
+
+
+## Windows copy some text from a file. 
+```cmd
+type mytext.txt | clip
+```
