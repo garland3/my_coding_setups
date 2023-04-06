@@ -51,6 +51,8 @@ python -m ipykernel install --user --name=mytestenv
 ### Specific python package index
 ```bash
 pip install XXX -i  https://pypi.org/simple
+# install a git repo
+pip install git+blahblah
 ```
 
 
