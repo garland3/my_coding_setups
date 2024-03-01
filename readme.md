@@ -175,6 +175,25 @@ printenv | grep txtImLookingfor
 ```
 set MYVAR=MYVALUE
 ```
+## Quick add to readme
+Often, I want to apend the last command to my readme. 
+
+
+```bash
+nano ~/.bashrc
+# to to the end
+append_last_command_to_readme() {
+    # Get the last command from history, removing leading spaces
+    last_command=$(fc -ln -1)
+    echo "${last_command:1}" >> README.md
+}
+# make an alias to aa, so I just need to type aa
+alias aa='append_last_command_to_readme'
+# exit
+# then apply the change. 
+source ~/.bashrc 
+```
+
  
  
  ## Linux Screen
