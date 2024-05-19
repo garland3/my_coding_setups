@@ -38,6 +38,28 @@ pip install -r requirements.txt
 # conda env update --name myenv --file my_env.yml --prune
 ```
 
+### config and secrets
+
+dynaconfig works well for keepign track of configs and secrets.
+
+```bash
+pip install dynaconf
+dynaconf init -f toml
+```
+
+then in the python code. 
+
+```
+from config import settings
+
+assert settings.key == "value"
+assert settings.number == 789
+assert settings.a_dict.nested.other_level == "nested value"
+assert settings['a_boolean'] is False
+assert settings.get("DONTEXIST", default=1) == 1
+
+```
+
 ### Jupyter
 
 Sometimes kernels are not added automatically. Assuming you have a `conda` setup, then try this.  
