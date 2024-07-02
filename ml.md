@@ -16,3 +16,24 @@ Starting a ML from scratch is a bad idea. Lots of great code exists. Here are so
 * 
 ## wrapper for common ML tasks. 
 * FLAML helps with hyper parameters and other common tasks, so I can do more thinking, less boiler plate. https://github.com/microsoft/FLAML
+
+
+## datat loader with bad data
+```python
+class MyDataSet(Dataset):
+    def __getitem__(self, index):
+        try:
+            return myitem[index]
+        expect:
+        return None
+
+def custom_collate(batch):
+    batch2 = [item for item in batch if item is not None]
+        if len(batch2) != len(batch):
+            print("Removed a problem item when making the batch. ")
+   return batch2
+
+ds = MyDataSet()
+dl = Dataloader(ds, collate_fn = custom_collate))
+```
+    
