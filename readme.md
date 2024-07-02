@@ -60,6 +60,59 @@ assert settings.get("DONTEXIST", default=1) == 1
 
 ```
 
+OR often I modify the config.py to something like this. 
+
+`config.py`
+
+```python
+import argparse
+from dynaconf import Dynaconf
+
+settings = Dynaconf(
+    envvar_prefix="DYNACONF",
+    settings_files=["settings.toml", ".secrets.toml"],
+)
+
+# `envvar_prefix` = export envvars with `export DYNACONF_FOO=bar`.
+# `settings_files` = Load these files in the order.
+
+# --------------------------------
+# -------------------------------
+# ------ OPTIONALLY COMBINE THE DYNACONFIG AND ARG PARSE
+# --------------------------------
+# -------------------------------
+
+parser = argparse.ArgumentParser(description="My Cool Project")
+parser.add_argument(
+    "--checkpoint_path", type=str, default=None, help="Load from checkpoint. "
+)
+args = parser.parse_args()
+
+if args.checkpoint_path is not None:
+    settings["Trainer"]["CHECKPOINT_PATH"] = args.checkpoint_path
+
+
+# --------------------------------
+# -------------------------------
+# ------ Convert to None if 'null' or "None"
+# --------------------------------
+# -------------------------------
+
+def traverse_config(settings, prefix=""):
+    for key, value in settings.items():
+        if isinstance(value, dict):
+            traverse_config(value, prefix=f"{prefix}{key}.")
+        else:
+            if isinstance(value, str) and value.lower() in ["null", "none"]:
+                settings[key] = None
+            # print(f"{prefix}{key} = {settings[key]}")
+
+    return settings
+
+settings = traverse_config(settings)
+
+```
+
 ### Jupyter
 
 Sometimes kernels are not added automatically. Assuming you have a `conda` setup, then try this.  
